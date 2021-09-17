@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>나비</title>
+    <script src="https://developer.letsee.io/api/webar?key=b45c421718eb705d5df3589b94d706f27d28772b08af857b688522215fa3c8d9"></script>           // 받았던 인증키 
+    <style media="place" type="text/css">
+    #container {
+        -letsee-target: uri('https://developer.letsee.io/api-tm/target-manager/target-uid/61441b4d56197305fc5c1333');       // 타겟매니저에서 타겟에 주어진 url
+        width: 250;
+        height: 393;
+        align-items: center;       
+    }
+    </style>
+</head>
+<body>
+  <script>
+    letsee.init();          // 웹브라우저에서 크기 얼마나 할거냐
+    letsee.ready(() => {
+      letsee.start();
+    });
+  </script>
+
+<div id="container" >  
+    안녕하세요
+</div>
+</body>
+</html>
